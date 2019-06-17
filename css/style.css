@@ -17,8 +17,54 @@ h1 {
   font-size: 80px;
   font-weight: 600;
   color: #192b59;
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+  max-width: 600px;
+  margin-bottom: 65px;
 }
-
+.title-h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #192b59;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+.title-h2 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1085e4;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.title-40 {
+  font-size: 40px;
+  letter-spacing: -1.1px;
+  font-weight: 600;
+  color: #192b59;
+  line-height: 1.2;
+}
+.title-40 span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 3.5px;
+  font-weight: 800;
+  color: #1085e4;
+  text-transform: uppercase;
+}
+.page-stat .title-h2, .page-screen .title-h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.page-stat .title-h2 {
+  max-width: 500px;
+}
+.wrap {
+  max-width: 1110px;
+  margin: 0 auto;
+}
 h2 {
   font-size: 50px;
   font-weight: 600;
@@ -33,8 +79,14 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
-
+.nav>li {
+  padding: 0 15px; 
+}
+.nav-item {
+  color: #6e7ea9;
+}
 .btn-primary {
   color: #fff;
   letter-spacing: 2.5px;
@@ -43,7 +95,7 @@ h2 {
   text-transform: uppercase;
   background: #1085e4;
   border: 1px solid #1085e4;
-  padding: 20px 40px;
+  padding: 20px 62px;
   border-radius: 30px;
 }
 
@@ -127,6 +179,137 @@ h2 {
   font-size: 14px;
 }
 
+.now {
+  font-weight: 700;
+  color: #c4d2dd;
+  text-transform: uppercase;
+}
+
+.page-screen span {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1085e4;
+  display: block;
+}
+
+.list-stat {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;  
+  margin-top: 77px;
+}
+.list-stat>li {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1085e4;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+.list-stat>li>span {
+  display: block;
+  margin-bottom: 23px;
+  letter-spacing: 0;
+  font-size: 60px;
+  color: #bacbdc;
+}
+
+.screen {
+  margin-top: 36px;
+  margin-bottom: -7px;
+}
+.box-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+.box-price-item {
+  background-color: #f5faff;
+  position: relative;
+  padding: 92px 55px;
+  overflow: hidden
+}
+.box-price-item.active {
+  background-color: #192b59;
+  color: #fff;
+}
+.box-price-item ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 60px;
+}
+.box-price-item li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.box-price-item p {
+  text-transform: uppercase;
+  color: #0084ff;
+  letter-spacing: 1px;
+  margin-bottom: 36px;
+}
+.box-price-item h3 {
+  color: #000958;
+  font-size: 70px;
+  margin: 0;
+  margin-bottom: 17px;
+}
+.box-price-item span {
+  font-size: 20px;
+}
+.box-price-item.active p {
+  color: #fff;
+}
+.box-price-item.active h3 {
+  color: #fff;
+}
+.mo {
+  color: #7b8ab2;
+}
+/* .box-price-item::after {
+  position: absolute;
+  width: 55px;
+  height: 100%;
+  background: #edf4fb;
+  content: "";
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 100%;
+  overflow: hidden;
+} */
+.box-price-item::after {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background: #edf4fb;
+  content: "";
+  top: -11px;
+  right: -50px;
+  overflow: hidden;
+  transform: rotate(174deg);
+}
+.box-price-item.active::after {
+  content: "";
+  background: #192b59;
+}
+
+/* PAGE */
+
+.page-stat, .page-screen {
+  background: #edf6ff;
+}
+.page-stat {
+  padding: 116px 0 96px 0;
+}
+.page-plan, .page-screen {
+  text-align: center;
+}
+.page-screen {
+  padding: 116px 0 0 0;
+}
+
+
 .page-subscibe {
   color: #dfe8ff;
   font-size: 18px;
@@ -154,41 +337,4 @@ h2 {
 .page-software dt {
   font-weight: 700;
   color: #5a6789;
-}
-
-.page-stat h2>span {
-  font-size: 16px;
-  font-weight: 800;
-  color: #1085e4;
-  display: block;
-}
-
-.page-stat h2 {
-  font-size: 50px;
-  font-weight: 600;
-  color: #192b59;
-}
-
-.page-stat span {
-  font-size: 60px;
-  color: #bacbdc;
-}
-
-.page-stat li {
-  font-size: 12px;
-  font-weight: 700;
-  color: #1085e4;
-}
-
-.now {
-  font-weight: 700;
-  color: #c4d2dd;
-  text-transform: uppercase;
-}
-
-.page-screen span {
-  font-size: 18px;
-  font-weight: 800;
-  color: #1085e4;
-  display: block;
 }
