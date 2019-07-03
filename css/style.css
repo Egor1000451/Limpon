@@ -61,6 +61,11 @@ h1 {
 .page-stat .title-h2 {
   max-width: 500px;
 }
+.page-subscibe .title-h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
 .wrap {
   max-width: 1110px;
   margin: 0 auto;
@@ -71,6 +76,11 @@ h1 {
   align-items: center;
   /* margin-bottom: 290px; */
   margin-bottom: 305px;
+}
+.box-subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo { 
   display: block;
@@ -204,6 +214,40 @@ h2 {
   height: 69px;
 }
 
+.grid {
+  display: grid;
+  grid-template-areas: "a b c"
+                       "d b c"
+                       "d f g"
+                       "e f g"
+                       "e h h";
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.grid-title {
+  grid-area: a;
+}
+.grid-item-1 {
+  grid-area: b;
+}
+.grid-item-2 {
+  grid-area: c;
+}
+.grid-item-3 {
+  grid-area: d;
+}
+.grid-item-4 {
+  grid-area: e;
+}
+.grid-item-5 {
+  grid-area: f;
+}
+.grid-item-6 {
+  grid-area: g;
+}
+.grid-text {
+  grid-area: h;
+}
 .grid h2 {
   color: #192b59;
   font-size: 40px;
@@ -218,16 +262,61 @@ h2 {
   display: block;
 }
 
+.grid-item {
+  text-align: center;
+  box-shadow: 0px 2px 5px #f4f4f4;
+  margin: 16px;
+  padding: 42px;
+}
+
 .grid-item h3 {
   color: #192b59;
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .grid-item a {
   color: #1085e4;
   font-size: 14px;
   font-weight: 600;
+  text-transform: uppercase;
+}
+
+.grid-icon {
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto 36px;
+}
+.grid-icon-1 {
+  background-image: url(../img/1.png);
+  width: 73px;
+  height: 79px;
+}
+.grid-icon-2 {
+  background-image: url(../img/2.png);
+  width: 89px;
+  height: 85px;
+}
+.grid-icon-3 {
+  background-image: url(../img/3.png);
+  width: 79px;
+  height: 82px;
+}
+.grid-icon-4 {
+  background-image: url(../img/4.png);
+  width: 85px;
+  height: 90px;
+}
+.grid-icon-5 {
+  background-image: url(../img/5.png);
+  width: 100px;
+  height: 87px;
+}
+.grid-icon-6 {
+  background-image: url(../img/6.png);
+  width: 103px;
+  height: 92px;
 }
 
 .info span {
@@ -336,8 +425,49 @@ h2 {
   content: "";
   background: #192b59;
 }
+.box-subscribe-text {
+  font-size: 18px;
+  max-width: 437px;
+}
+
+.box-subscribe-user {
+  position: relative;
+}
+
+.box-subscribe-child {
+  flex-basis: 49%;
+}
+
+.box-subscribe-user input {
+  border: 2px solid #4161b5;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 45px;
+  background: transparent;
+  padding: 25px 230px 25px 37px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.box-subscribe-user .btn-primary {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  padding: 17px 50px;
+}
+
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+  outline: none;
+}
+
+.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}
+.box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}
+.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
 
 /* PAGE */
+
 .page-header {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
@@ -365,10 +495,9 @@ h2 {
   padding: 116px 0 0 0;
 }
 
-
 .page-subscibe {
-  color: #dfe8ff;
-  padding: 41px;
+  color: #fff;
+  padding: 25px 0px 28px 0px;
   font-size: 18px;
   background: rgba(10,32,144,1);
   background: -moz-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
@@ -379,61 +508,9 @@ h2 {
   background: linear-gradient(to right, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
 }
-.box-subscribe {
-  display: flex;
-  align-items: center;
-}
-.page-subscibe span {
-  font-size: 14px;
-  color: #00bffe;
-  display: block;
-}
-.page-subscibe .title-h2 {
-  color: #fff;
-  letter-spacing: -2px;
-  margin-bottom: 25px;
-}
-.page-subscibe p {
-  margin-bottom: 36px;
-}
-.page-subscibe .description {
-  margin-right: 115px;
-}
-.page-subscibe .subscribe {
-  padding: 7px 128px;
-  background: transparent;
-  color: #dfe8ff;
-  border: 1px solid #dfe8ff;
-  border-radius: 50px;
-  position: relative;
-  height: 50px;
-  width: 258px;
-}
-.page-subscibe input {
-  background: transparent;
-  color: #dfe8ff;
-  border: none;
-  font-size: 14px;
-  position: absolute;
-  top: 23px;
-  left: 37px;
-}
-.page-subscibe input::placeholder {
-  color: #dfe8ff;
-}
-.page-subscibe input:focus {
-  outline: none;
-}
-.page-subscibe .btn-primary {
-  padding: 17px 42px;
-  font-size: 14px;
-  font-weight: 800;
-  position: absolute;
-  right: 4px;
-  top: 6px;
-}
-.page-subscibe .btn-primary:focus {
-  outline: none;
+
+.page-grid {
+  margin: 82px;
 }
 
 .page-software h2 {
