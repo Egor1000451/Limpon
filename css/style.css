@@ -131,6 +131,7 @@ h2 {
   border: 1px solid #1085e4;
   padding: 20px 62px;
   border-radius: 30px;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -148,6 +149,7 @@ h2 {
   border: 1px solid #cbdbe8;
   padding: 20px 40px;
   border-radius: 30px;
+  transition: 0.3s;
 }
 
 .btn-secondary:hover {
@@ -158,6 +160,7 @@ h2 {
   font-weight: 400;
   padding: 21px 56px;
   letter-spacing: 1.7px;
+  transition: 0.3s;
 }
 
 .btn-group a+a {
@@ -174,6 +177,7 @@ h2 {
   padding: 20px 60px;
   border-radius: 30px;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .btn-info:hover {
@@ -221,6 +225,8 @@ h2 {
                        "d f g"
                        "e f g"
                        "e h h";
+  grid-gap: 35px;
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -265,7 +271,6 @@ h2 {
 .grid-item {
   text-align: center;
   box-shadow: 0px 2px 5px #f4f4f4;
-  margin: 16px;
   padding: 42px;
 }
 
@@ -286,37 +291,33 @@ h2 {
 .grid-icon {
   background-repeat: no-repeat;
   display: block;
+  height: 92px;
   margin: 0 auto 36px;
+  background-position: center;
 }
 .grid-icon-1 {
   background-image: url(../img/1.png);
-  width: 73px;
-  height: 79px;
+  background-size: 73px 79px;
 }
 .grid-icon-2 {
   background-image: url(../img/2.png);
-  width: 89px;
-  height: 85px;
+  background-size: 89px 85px;
 }
 .grid-icon-3 {
   background-image: url(../img/3.png);
-  width: 79px;
-  height: 82px;
+  background-size: 79px 82px;
 }
 .grid-icon-4 {
   background-image: url(../img/4.png);
-  width: 85px;
-  height: 90px;
+  background-size: 85px 90px;
 }
 .grid-icon-5 {
   background-image: url(../img/5.png);
-  width: 100px;
-  height: 87px;
+  background-size: 100px 87px;
 }
 .grid-icon-6 {
   background-image: url(../img/6.png);
-  width: 103px;
-  height: 92px;
+  background-size: 103px 92px;
 }
 
 .info span {
@@ -334,6 +335,49 @@ h2 {
   font-weight: 700;
   color: #c4d2dd;
   text-transform: uppercase;
+}
+
+.page-software-icon {
+  display: block;
+  background-image: url(../img/software-icon.png);
+  background-repeat: no-repeat;
+  background-position: -28px 0;
+  width: 115px;
+  height: 84px;
+}
+.page-software .title-h2 {
+  margin-top: 12px;
+  max-width: 564px;
+  margin-bottom: 26px;
+}
+.page-software-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.page-software-flex>div {
+  flex-basis: 55%;
+}
+.page-software-list {
+  margin-top: 30px;
+  height: 323px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.page-software-list::-webkit-scrollbar { width: 4px;}
+.page-software-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-software-list::-webkit-scrollbar-thumb { height: 5px; background-color: #1085e4; border-radius: 3px;}
+.page-software-list::-webkit-scrollbar-corner { background-color: #999;}
+.page-software-list::-webkit-resizer { background-color: #666;}
+.page-software-list dt {
+  font-weight: 700;
+  color: #5a6789;
+  margin-bottom: 10px;
+}
+.page-software-list dd {
+  margin-left: 0;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .list-stat {
@@ -513,13 +557,6 @@ h2 {
   margin: 82px;
 }
 
-.page-software h2 {
-  font-size: 50px;
-  font-weight: 600;
-  color: #192b59;
-}
-
-.page-software dt {
-  font-weight: 700;
-  color: #5a6789;
+.page-software {
+  padding: 109px 0px 156px 0px;
 }
